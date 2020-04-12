@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Qwizzr</string>
+    <string name="tv_main_title_text">Qwizzr</string>
+    <string name="btn_main_start_text">Start</string>
+</resources>
