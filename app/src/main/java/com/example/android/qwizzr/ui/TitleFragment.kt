@@ -6,6 +6,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.databinding.DataBindingUtil
+import androidx.navigation.findNavController
 
 import com.example.android.qwizzr.R
 import com.example.android.qwizzr.databinding.FragmentTitleBinding
@@ -26,6 +27,11 @@ class TitleFragment : Fragment() {
             container,
             false
         )
+
+        binding.btnMainStart.setOnClickListener { view: View ->
+            view.findNavController().navigate(R.id.action_titleFragment_to_questionFragment)
+        }
+
         return binding.root
     }
 
