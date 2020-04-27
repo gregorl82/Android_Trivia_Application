@@ -16,7 +16,6 @@
             android:layout_marginTop="24dp"
             android:layout_marginBottom="16dp"
             android:fontFamily="@font/fugaz_one"
-            android:text="Question 1"
             android:textAlignment="center"
             android:textColor="#000000"
             android:textSize="26sp"
@@ -24,19 +23,20 @@
             app:layout_constraintBottom_toTopOf="@id/questionText"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="Question 1" />
 
         <TextView
             android:id="@+id/questionText"
             android:layout_width="0dp"
             android:layout_height="0dp"
             android:lineSpacingExtra="8sp"
-            android:text="How many Wimbledon Ladies' singles titles were won by Martina Navratilova?"
             android:textSize="22sp"
             app:layout_constraintBottom_toTopOf="@id/answersRadioGroup"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/questionNumber" />
+            app:layout_constraintTop_toBottomOf="@id/questionNumber"
+            tools:text="How many Wimbledon Ladies' singles titles were won by Martina Navratilova?" />
 
         <RadioGroup
             android:id="@+id/answersRadioGroup"
@@ -56,7 +56,7 @@
                 android:layout_marginTop="4dp"
                 android:fontFamily="sans-serif"
                 android:padding="8dp"
-                android:text="Eight" />
+                tools:text="Eight" />
 
             <RadioButton
                 android:id="@+id/answerChoice2"
@@ -64,7 +64,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginEnd="4dp"
                 android:padding="8dp"
-                android:text="Ten" />
+                tools:text="Ten" />
 
             <RadioButton
                 android:id="@+id/answerChoice3"
@@ -72,7 +72,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="4dp"
                 android:padding="8dp"
-                android:text="Seven" />
+                tools:text="Seven" />
 
             <RadioButton
                 android:id="@+id/answerChoice4"
@@ -80,7 +80,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="4dp"
                 android:padding="8dp"
-                android:text="Nine" />
+                tools:text="Nine" />
         </RadioGroup>
 
         <Button

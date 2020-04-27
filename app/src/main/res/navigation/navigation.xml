@@ -11,12 +11,12 @@
         android:label="TitleFragment"
         tools:layout="@layout/fragment_title" >
         <action
-            android:id="@+id/action_titleFragment_to_questionFragment"
-            app:destination="@id/questionFragment" />
+            android:id="@+id/action_titleFragment_to_gameFragment"
+            app:destination="@id/gameFragment" />
     </fragment>
     <fragment
-        android:id="@+id/questionFragment"
-        android:name="com.example.android.qwizzr.ui.QuestionFragment"
-        android:label="QuestionFragment"
-        tools:layout="@layout/fragment_question"/>
+        android:id="@+id/gameFragment"
+        android:name="com.example.android.qwizzr.ui.GameFragment"
+        android:label="GameFragment"
+        tools:layout="@layout/fragment_game"/>
 </navigation>

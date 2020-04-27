@@ -29,7 +29,7 @@ class TitleFragment : Fragment() {
         )
 
         binding.btnMainStart.setOnClickListener { view: View ->
-            view.findNavController().navigate(R.id.action_titleFragment_to_questionFragment)
+            view.findNavController().navigate(R.id.action_titleFragment_to_gameFragment)
         }
 
         return binding.root

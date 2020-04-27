@@ -8,21 +8,21 @@ import android.view.ViewGroup
 import androidx.databinding.DataBindingUtil
 
 import com.example.android.qwizzr.R
-import com.example.android.qwizzr.databinding.FragmentQuestionBinding
+import com.example.android.qwizzr.databinding.FragmentGameBinding
 
 /**
  * A simple [Fragment] subclass.
  */
-class QuestionFragment : Fragment() {
+class GameFragment : Fragment() {
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        val binding = DataBindingUtil.inflate<FragmentQuestionBinding>(
+        val binding = DataBindingUtil.inflate<FragmentGameBinding>(
             inflater,
-            R.layout.fragment_question,
+            R.layout.fragment_game,
             container,
             false
         )
